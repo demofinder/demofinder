@@ -1,4 +1,6 @@
 {
-  "Welcome": "Willkommen",
-  "A brand new app.": "Eine neue App."
+  "th_title": "Titel",
+  "th_city": "Stadt",
+  "th_meetingpoint": "Treffpunkt",
+  "th_start": "Uhrzeit"
 }
