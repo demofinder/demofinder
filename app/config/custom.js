@@ -32,15 +32,15 @@ module.exports.custom = {
   * > that is displayed all over the app when it's first generated.         *
   *                                                                         *
   **************************************************************************/
-  platformCopyrightYear: '2021',
+  platformCopyrightYear: '2024',
 
   /**************************************************************************
   *                                                                         *
   * The TTL (time-to-live) for various sorts of tokens before they expire.  *
   *                                                                         *
   **************************************************************************/
-  passwordResetTokenTTL: 24*60*60*1000,// 24 hours
-  emailProofTokenTTL:    24*60*60*1000,// 24 hours
+  passwordResetTokenTTL: 24 * 60 * 60 * 1000,// 24 hours
+  emailProofTokenTTL: 24 * 60 * 60 * 1000,// 24 hours
 
   /**************************************************************************
   *                                                                         *
@@ -48,7 +48,7 @@ module.exports.custom = {
   * if "Remember Me" was checked while logging in.                          *
   *                                                                         *
   **************************************************************************/
-  rememberMeCookieMaxAge: 30*24*60*60*1000, // 30 days
+  rememberMeCookieMaxAge: 30 * 24 * 60 * 60 * 1000, // 30 days
 
   /**************************************************************************
   *                                                                         *
@@ -69,7 +69,7 @@ module.exports.custom = {
 
   // The sender that all outgoing emails will appear to come from.
   fromEmailAddress: 'noreply@example.com',
-  fromName: 'The NEW_APP_NAME Team',
+  fromName: 'The Demofinder Team',
 
   // Email address for receiving support messages & other correspondences.
   // > If you're using the default privacy policy, this will be referenced
