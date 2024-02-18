@@ -66,6 +66,7 @@ module.exports.bootstrap = async function () {
     {
       id: '4d773c0a-c5b0-4d1c-867c-867cbba6bc41',
       city: 'Berlin',
+      status: 'registered',
       address: 'Versammlungsfläche am Reichstag',
       startsAt: '2024-02-03 14:00:00',
       endsAt: '2024-02-03 20:00:00',
@@ -78,6 +79,7 @@ module.exports.bootstrap = async function () {
     {
       id: '888e029c-74b4-4ca0-b78d-538e23ded93f',
       city: 'Berlin',
+      status: 'registered',
       address: 'Versammlungsfläche am Reichstag',
       startsAt: '2024-02-03 14:00:00',
       endsAt: '2024-02-03 20:00:00',
