@@ -1,6 +1,5 @@
 {
-	"th_title": "th_title",
-	"th_city": "th_city",
-	"th_meetingpoint": "th_meetingpoint",
-	"th_start": "th_start"
+	"event_title": "event_title",
+	"event_city": "event_city",
+	"event_start": "event_start"
 }

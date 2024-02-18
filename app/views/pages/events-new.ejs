@@ -1,0 +1,46 @@
+<div id="events-new" v-cloak>
+  <div class="container-fluid pt-5 pb-5">
+    <h1 class="text-center"><%= __('event_register') %></h1>
+    <div style="max-width:  650px;" class="mx-auto" v-if="!cloudSuccess">
+      <p class="text-center"><%= __('event_register_text') %></p>
+      <hr/>
+      <ajax-form action="deliverNewEvent" :form-errors.sync="formErrors" :form-data="formData" :form-rules="formRules" :syncing.sync="syncing" :cloud-error.sync="cloudError" @submitted="submittedForm()">
+        <div class="form-group">
+          <label for="title"><%= __('event_title') %></label>
+          <input class="form-control" id="title" name="title" type="text"  :class="[formErrors.title ? 'is-invalid' : '']" v-model.trim="formData.title" placeholder="Demo ..." autocomplete="none" focus-first>
+          <div class="invalid-feedback" v-if="formErrors.title"><%= __('event_register_invalid_title') %></div>
+        </div>
+        <div class="form-group">
+          <label for="city"><%= __('event_city') %></label>
+          <input class="form-control" id="city" name="city" type="text"  :class="[formErrors.city ? 'is-invalid' : '']" v-model.trim="formData.city" placeholder="Berlin" autocomplete="city">
+          <div class="invalid-feedback" v-if="formErrors.city"><%= __('event_register_invalid_city') %></div>
+        </div>
+        <div class="form-group">
+          <label for="address"><%= __('event_address') %></label>
+          <input class="form-control" id="address" name="address" type="text"  :class="[formErrors.address ? 'is-invalid' : '']" v-model.trim="formData.address" placeholder="Reichstag" autocomplete="none">
+          <div class="invalid-feedback" v-if="formErrors.address"><%= __('event_register_invalid_address') %></div>
+        </div>
+        <div class="form-group">
+          <label for="starts-at"><%= __('event_start') %></label>
+          <input class="form-control" id="starts-at" name="starts-at" type="text"  :class="[formErrors.startsAt ? 'is-invalid' : '']" v-model.trim="formData.startsAt" placeholder="2024-01-01 14:00:00" autocomplete="none">
+          <div class="invalid-feedback" v-if="formErrors.startsAt"><%= __('event_register_invalid_startsAt') %></div>
+        </div>
+        <div class="form-group">
+          <label for="description"><%= __('event_description') %></label>
+          <textarea class="form-control" id="description" name="description" :class="[formErrors.description ? 'is-invalid' : '']" v-model.trim="formData.description" placeholder="..." autocomplete="none"></textarea>
+          <div class="invalid-feedback" v-if="formErrors.description"><%= __('event_register_invalid_description') %></div>
+        </div>
+        <cloud-error v-if="cloudError"></cloud-error>
+        <div class="form-group">
+          <ajax-button type="submit" :syncing="syncing" class="btn btn-dark btn-lg btn-block">Send message</ajax-button>
+        </div>
+      </ajax-form>
+    </div>
+    <div style="max-width: 450px;" class="mx-auto text-center" v-else>
+      <p class="text-center"><%= __('event_register_thank') %></p>
+      <hr/>
+      <p><%= __('event_register_success') %></p>
+    </div>
+  </div>
+</div>
+<%- /* Expose locals as `window.SAILS_LOCALS` :: */ exposeLocalsToBrowser() %>

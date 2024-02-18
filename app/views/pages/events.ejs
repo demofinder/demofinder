@@ -1,16 +1,19 @@
 <div id="events">
   <div class="container pt-5 pb-5">
-    <h1>Demos</h1>
+    <a href = '/events/new'><%= __('event_register') %></a>
+    <h1>Events</h1>
     <table class="table-striped">
       <tr>
-        <th><%= __('th_title') %></th>
-        <th><%= __('th_city') %></th>
-        <th><%= __('th_meetingpoint') %></th>
-        <th><%= __('th_start') %></th>
+        <th><%= __('event_title') %></th>
+        <th><%= __('event_type') %></th>
+        <th><%= __('event_city') %></th>
+        <th><%= __('event_address') %></th>
+        <th><%= __('event_start') %></th>
       </tr>
       <% for(const event of events){ %>
         <tr>
           <td><%= event.title %></td>
+          <td><%= event.eventType %></td>
           <td><%= event.city %></td>
           <td><%= event.address %></td>
           <td><%= event.startsAt %></td>

@@ -1,6 +1,17 @@
 {
-  "th_title": "Titel",
-  "th_city": "Stadt",
-  "th_meetingpoint": "Treffpunkt",
-  "th_start": "Uhrzeit"
+	"event_register": "Event anmelden",
+	"event_register_text": "Das Event wurde bereits angemeldet und ist noch nicht bei uns gelistet? Dann kann sie hier anonym bei uns registriert werden.",
+	"event_city": "Stadt",
+	"event_address": "Treffpunkt",
+	"event_start": "Uhrzeit",
+	"event_title": "Titel",
+	"event_type": "Art",
+	"event_register_invalid_title": "Bitte verwende einen aussagekräftigen Titel (min. 10 Zeichen).",
+	"event_register_invalid_city": "event_register_invalid_city",
+	"event_register_invalid_startsAt": "event_register_invalid_startsAt",
+	"event_description": "event_description",
+	"event_register_invalid_description": "Bitte verwende eine aussagekräftige Beschreibung (min. 10 Zeichen).",
+	"event_register_success": "event_register_success",
+	"event_register_thank": "event_register_thank",
+	"event_register_invalid_address": "event_register_invalid_address"
 }

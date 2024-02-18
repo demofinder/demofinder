@@ -20,6 +20,12 @@ module.exports = {
       example: '4d773c0a-c5b0-4d1c-867c-867cbba6bc41'
     },
 
+    eventType: {
+      type: 'string',
+      isIn: ['demo'],
+      defaultsTo: 'demo'
+    },
+
     countryCode: {
       type: 'string',
       defaultsTo: 'de',
@@ -45,7 +51,7 @@ module.exports = {
     },
     endsAt: {
       type: 'string',
-      required: true,
+      required: false,
       description: 'Localtime end',
       example: '2024-01-31 14:00:00'
     },

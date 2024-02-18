@@ -1,6 +1,19 @@
 {
-	"th_title": "title",
-	"th_city": "city",
-	"th_meetingpoint": "meet",
-	"th_start": "start"
+	"event_register": "register event",
+	"event_register_text": "The event is already planned not yet listed? Send it to us anonymously.",
+	"event_city": "city",
+	"event_start": "start",
+	"event_title": "title",
+	"event_type": "type",
+	"event_register_invalid_title": "event_register_invalid_title",
+	"event_register_invalid_city": "event_register_invalid_city",
+	"event_meetingpoint": "event_meetingpoint",
+	"event_register_invalid_meetingpoint": "event_register_invalid_meetingpoint",
+	"event_register_invalid_startsAt": "event_register_invalid_startsAt",
+	"event_description": "event_description",
+	"event_register_invalid_description": "event_register_invalid_description",
+	"event_register_thank": "event_register_thank",
+	"event_register_success": "event_register_success",
+	"event_address": "event_address",
+	"event_register_invalid_address": "event_register_invalid_address"
 }

@@ -16,7 +16,9 @@ module.exports = {
 
   fn: async function () {
 
-    const events = await Event.find({});
+    const events = await Event.find({
+      select: ['id', 'title', 'eventType', 'city', 'address', 'startsAt'],
+    });
 
     // Respond with view.
     return { events };

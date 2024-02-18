@@ -16,7 +16,8 @@ module.exports.routes = {
   'GET /': { action: 'view-homepage-or-redirect' },
   'GET /welcome/:unused?': { action: 'dashboard/view-welcome' },
 
-  'GET /demos': { action: 'view-events' },
+  'GET /events': { action: 'view-events' },
+  'GET /events/new': { action: 'view-events-new' },
   'GET /faq': { action: 'view-faq' },
   'GET /legal/terms': { action: 'legal/view-terms' },
   'GET /legal/privacy': { action: 'legal/view-privacy' },
@@ -62,6 +63,7 @@ module.exports.routes = {
   'POST  /api/v1/entrance/send-password-recovery-email': { action: 'entrance/send-password-recovery-email' },
   'POST  /api/v1/entrance/update-password-and-login': { action: 'entrance/update-password-and-login' },
   'POST  /api/v1/deliver-contact-form-message': { action: 'deliver-contact-form-message' },
+  'POST  /api/v1/deliver-new-event': { action: 'deliver-new-event' },
   'POST  /api/v1/observe-my-session': { action: 'observe-my-session', hasSocketFeatures: true },
 
 };
