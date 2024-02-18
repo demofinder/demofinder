@@ -47,12 +47,32 @@ module.exports = {
 
     success: {
       description: 'The event was sent successfully.'
-    }
+    },
+
+    invalid: {
+      responseType: 'badRequest',
+      description: 'Please check the dates.'
+    },
 
   },
 
 
   fn: async function (inputs) {
+    const inPast = (date) => {
+      return date.setHours(0, 0, 0, 0) < new Date().setHours(0, 0, 0, 0)
+    };
+
+    const tooFarInFuture = (date) => {
+      let future = new Date();
+      future = future.setDate(future.getDate() + 365);
+      return date.setHours(0, 0, 0, 0) > future;
+    };
+
+    const startDT = new Date(inputs.startsAt);
+    console.log(startDT);
+    if (inPast(startDT) || tooFarInFuture(startDT)) {
+      throw ('invalid');
+    }
 
     const event = await sails.helpers.createEvent({ ...inputs });
     console.log(event);

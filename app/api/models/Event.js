@@ -47,13 +47,13 @@ module.exports = {
       type: 'string',
       required: true,
       description: 'Localtime start',
-      example: '2024-01-31 14:00:00'
+      example: '2024-01-31T14:00:00Z'
     },
     endsAt: {
       type: 'string',
       required: false,
       description: 'Localtime end',
-      example: '2024-01-31 14:00:00'
+      example: '2024-01-31T16:00:00Z'
     },
 
     title: {
